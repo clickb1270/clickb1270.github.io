@@ -1,0 +1,69 @@
+@font-face{
+    font-family:"MyFont"; /*font 이름 */
+    src:url(font/nanumsquare.ttf); /*경로*/
+}
+
+body{
+    font-family: "MyFont";
+    transform: rotate(-0.005);
+}
+    
+a{
+    color:#000;
+}
+
+a:hover{
+    color:#000;
+    text-decoration: none;
+}
+
+.background-img {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.small-heading {
+    font-size:4.5rem;
+}
+
+.white-color {
+    color:white;
+}
+
+.center {
+    text-align: center;
+}
+
+.icon-size >a>img{ /*img display:block; margin: 0 auto;*/
+    width:10.0rem;
+    margin:0 auto 15px ;
+    display: block;
+}
+
+.img-size a>img {
+    width:100%;
+}
+
+.yellow-box {
+    width: 100%;
+    height:100%;
+    background-color: yellow;
+    position:absolute;
+    opacity:0;
+    transition-duration: 1s;
+    /*transition-timing-function: 여러가지 함수가 있는데 찾아보기*/
+}
+
+.yellow-box i {
+    font-size:200%;
+}
+
+
+.yellow-box:hover{
+    opacity: 0.5;
+}
+
+.position {
+    position:relative;
+}
